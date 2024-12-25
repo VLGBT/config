@@ -1,0 +1,88 @@
+ [dual_carriage]
+ axis:x
+ # safe_distance:100
+ step_pin: U_STEP_PIN
+ dir_pin: U_DIR_PIN
+ enable_pin: !U_EN_PIN
+ microsteps: 16  
+ rotation_distance: 40
+ endstop_pin: U_ENDSTOP_PIN
+homing_speed: 70
+[tmc5160 dual_carriage]
+ cs_pin:U_CS_PIN
+ spi_software_mosi_pin: U_MOSI_PIN
+ spi_software_miso_pin: U_MISO_PIN
+spi_software_sclk_pin: U_SCLK_PIN
+ #spi_bus:
+ interpolate: True
+ run_current:1.4
+ 
+ [temperature_sensor EBB_2]
+ sensor_type: temperature_mcu
+ sensor_mcu:extruder1
+ min_temp: 0
+ max_temp: 150
+ [static_digital_output EBB2_FAN]
+ pins: extruder1:PA0, extruder1:PA1
+ [filament_switch_sensor 2]
+ pause_on_runout: True
+ #runout_gcode:
+ event_delay: 3.0
+ switch_pin: extruder1:PB8
+ [filament_motion_sensor 2m]
+ pause_on_runout: True
+ switch_pin: extruder1:PB9
+ detection_length: 2.88
+ extruder: extruder1
+ [extruder1] #Секция конфигурации экструдера
+ step_pin: extruder1:PD0
+ dir_pin: !extruder1:PD1
+ enable_pin: !extruder1:PD2
+ microsteps: 16
+ rotation_distance: 4.726
+ nozzle_diameter: 1.2
+ filament_diameter: 1.8 #При смене филамента проверяйте это значение по факту, к примеру катушки НИТ могут быть нестанартного диаметра 
+ heater_pin: extruder1:PB13 # 
+ sensor_pin: extruder1:PA3
+ sensor_type: T-D500
+ control = pid
+ pid_kp = 29.643
+ pid_ki = 2.272
+ pid_kd = 96.712
+ min_temp: 0
+ max_temp: 500
+ min_extrude_temp:0
+ max_extrude_only_distance: 200
+ pressure_advance: 0 #Это значение должно быть откалибровано для каждого вида пластика, ввиду различной текучести материалов 
+ pressure_advance_smooth_time: 0.040
+ [tmc2209 extruder1] #Секция конфигурации драйвера  экструдера
+ uart_pin: extruder1:PA15
+ run_current: 0.9
+ [verify_heater extruder1] #Защита от перегрева экструдера
+ max_error: 200
+ check_gain_time:20
+ hysteresis: 2
+ heating_gain: 15
+ [adxl345 Ex1]
+ cs_pin:extruder1:PB12
+ spi_speed: 5000000
+ spi_software_sclk_pin:extruder1:PB10
+ spi_software_mosi_pin:extruder1:PB11
+ spi_software_miso_pin:extruder1:PB2
+ axes_map: z, x, y
+ rate: 3200
+
+# [resonance_tester]
+# accel_chip: adxl345 Ex1
+# probe_points:
+#     210,150,100  # X100, Y100, Z20
+# min_freq: 5
+# max_freq: 133
+# [fan_generic extruder1_fan] #Вентилятор
+# pin: !PF8
+# enable_pin:PA1
+# hardware_pwm: False
+# cycle_time: 0.005
+# off_below: 0.1
+# kick_start_time: 0.1
+# shutdown_speed: 0
