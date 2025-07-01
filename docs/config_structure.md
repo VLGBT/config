@@ -1,11 +1,13 @@
 **Большой текст**
+*Легенда:*
+🛑-устаревшее
 ```plaintext
 📁config/
 📁├──boards/
 │  ├──EBB42.cfg
 │  ├──EBB42 2EX.cfg
 │  ├──M5P.cfg
-│  ├──M8P1.cfg
+│  🛑├──M8P1.cfg
 │  └──M8P2.cfg
 📁├──docs/
 │  ├──CHANGELOG.md
@@ -31,7 +33,7 @@
 │  📁├──FAP/
 │  │  └──clean_nozzle.cfg
 │  📁├──GIGA/
-│  📁└──OLD/
+│  📁└──🛑OLD/
 📁├──printers/
 │  ├──FA/
 │  │  ├──2EX.cfg
@@ -59,7 +61,7 @@
 │  │  ├──A2.cfg
 │  │  ├──CUBE600.cfg
 │  │  └──CUBE1000.cfg
-│  📁└──OLD/
+│  📁└──🛑OLD/
 │     ├──A3P.cfg
 │     ├──A4P.cfg
 │     ├──common.cfg
