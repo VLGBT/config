@@ -1,20 +1,20 @@
 ```plaintext
 config/
 ├──boards/
-│		├──EBB42.cfg
-│		├──EBB42 2EX.cfg
-│		├──M5P.cfg
-│		├──M8P1.cfg
-│		└──M8P2.cfg
+│  ├──EBB42.cfg
+│  ├──EBB42 2EX.cfg
+│  ├──M5P.cfg
+│  ├──M8P1.cfg
+│  └──M8P2.cfg
 ├──docs/
-│		├──changelog.md
-│		└──config_structure.md
+│  ├──changelog.md
+│  └──config_structure.md
 ├──macros/
-│		├──common/
-│		│		├──idex/
-│		│		│		└──idex.cfg
-│		│		├──cancel_pause_resume.cfg\
-│		│		├──common.cfg
+│  ├──common/
+│  │		├──idex/
+│  │		│		└──idex.cfg
+│  │		├──cancel_pause_resume.cfg\
+│  │		├──common.cfg
 │		│		├──features.cfg
 │		│		├──input_shaper.cfg
 │		│		├──led_control.cfg
