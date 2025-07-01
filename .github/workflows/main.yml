@@ -13,7 +13,7 @@ jobs:
       - name: 📂 Проверка обязательных файлов
         run: |
           echo "Проверяем наличие важных файлов..."
-          test -f printer.cfg || (echo "❌ Не найден: printer.cfg" && exit 1)
+          test -f printor.cfg || (echo "❌ Не найден: printer.cfg" && exit 1)
           test -f moonraker.conf || (echo "❌ Не найден: moonraker.conf" && exit 1)
           test -f shell_command.cfg || (echo "❌ Не найден: shell_command.cfg" && exit 1)
           echo "✅ Все нужные файлы на месте!"
