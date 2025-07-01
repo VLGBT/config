@@ -7,7 +7,7 @@ config/
 │  ├──M8P1.cfg
 │  └──M8P2.cfg
 ├──docs/
-│  ├──changelog.md
+│  ├──CHANGELOG.md
 │  └──config_structure.md
 ├──macros/
 │  ├──common/
