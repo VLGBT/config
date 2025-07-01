@@ -61,8 +61,8 @@ config/
 │  └──OLD/
 │      ├──A3P.cfg
 │      ├──A4P.cfg
-│		   ├──common.cfg
-│		   └──macros.cfg
+│      ├──common.cfg
+│      └──macros.cfg
 ├──crownest.conf
 ├──KlipperScreen.conf
 ├──moonraker.conf
