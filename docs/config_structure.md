@@ -4,11 +4,11 @@
 ```plaintext
 📁config/
 📁├──boards/
-│  ├──EBB42.cfg
-│  ├──EBB42 2EX.cfg
-│  ├──M5P.cfg
-│  🛑├──M8P1.cfg
-│  └──M8P2.cfg
+│    ├──EBB42.cfg
+│    ├──EBB42 2EX.cfg
+│    ├──M5P.cfg
+│    🛑├──M8P1.cfg
+│    └──M8P2.cfg
 📁├──docs/
 │  ├──CHANGELOG.md
 │  └──config_structure.md
