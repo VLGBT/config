@@ -1,3 +1,4 @@
+```plaintext
 config/
 ├──boards/
 │		├──EBB42.cfg
@@ -69,3 +70,4 @@ config/
 ├──README.md
 ├──shell_command.cfg
 └──variables.cfg
+```
