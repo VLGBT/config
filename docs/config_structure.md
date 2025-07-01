@@ -66,7 +66,7 @@ config/
 ├──crownest.conf
 ├──KlipperScreen.conf
 ├──moonraker.conf
-├──printer.cfg
+├──printer.cfg  #🛠️Основной настроечный файл 
 ├──README.md
 ├──shell_command.cfg
 └──variables.cfg
