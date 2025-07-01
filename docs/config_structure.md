@@ -1,15 +1,15 @@
 ```plaintext
-config/
-├──boards/
+📁config/
+📁├──boards/
 │  ├──EBB42.cfg
 │  ├──EBB42 2EX.cfg
 │  ├──M5P.cfg
 │  ├──M8P1.cfg
 │  └──M8P2.cfg
-├──docs/
+📁├──docs/
 │  ├──CHANGELOG.md
 │  └──config_structure.md
-├──macros/
+📁├──macros/
 │  ├──common/
 │  │  ├──idex/
 │  │  │  └──idex.cfg
@@ -26,12 +26,12 @@ config/
 │  │  ├──start_end_print.cfg
 │  │  ├──template_macros.cfg
 │  │  └──z_calibration.cfg
-│  ├──FA/
-│  ├──FAP/
+│  📁├──FA/
+│  📁├──FAP/
 │  │  └──clean_nozzle.cfg
-│  ├──GIGA/
-│  └──OLD/
-├──printers/
+│  📁├──GIGA/
+│  📁└──OLD/
+📁├──printers/
 │  ├──FA/
 │  │  ├──2EX.cfg
 │  │  ├──A2 2EX.cfg
@@ -42,7 +42,7 @@ config/
 │  │  ├──A4.cfg
 │  │  ├──common.cfg`
 │  │  └──macros.cfg
-│  ├──FAP/
+│  📁├──FAP/
 │  │  ├──2EX.cfg
 │  │  ├──A2P 2EX.cfg
 │  │  ├──A2P.cfg
@@ -53,12 +53,12 @@ config/
 │  │  ├──common.cfg`
 │  │  ├──CUBE600P 2EX.cfg
 │  │  └──CUBE600P.cfg
-│  ├──GIGA/
+│  📁├──GIGA/
 │  │  ├──2EX.cfg
 │  │  ├──A2.cfg
 │  │  ├──CUBE600.cfg
 │  │  └──CUBE1000.cfg
-│  └──OLD/
+│  📁└──OLD/
 │     ├──A3P.cfg
 │     ├──A4P.cfg
 │     ├──common.cfg
