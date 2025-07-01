@@ -10,8 +10,8 @@
 │  ├──CHANGELOG.md
 │  └──config_structure.md
 📁├──macros/
-│  ├──common/
-│  │  ├──idex/
+│  📁├──common/
+│  │  📁├──idex/
 │  │  │  └──idex.cfg
 │  │  ├──cancel_pause_resume.cfg\
 │  │  ├──common.cfg
@@ -66,7 +66,7 @@
 ├──crownest.conf
 ├──KlipperScreen.conf
 ├──moonraker.conf
-├──printer.cfg  **🛠️Основной настроечный файл** 
+🛠️├──printer.cfg  **🛠Основной настроечный файл** 
 ├──README.md
 ├──shell_command.cfg
 └──variables.cfg
