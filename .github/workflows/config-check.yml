@@ -1,19 +1,14 @@
 name: Klipper Config Check
 
 on:
-  push:
-    paths:
-      - '**.cfg'
-  pull_request:
-    paths:
-      - '**.cfg'
+  workflow_dispatch:  # позволяет запуск вручную из GitHub UI
 
 jobs:
   check-klipper-config:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -21,17 +16,19 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install klipper dependencies
+      - name: Install system dependencies
         run: |
           sudo apt update
           sudo apt install -y libffi-dev build-essential
-          git clone https://github.com/Klipper3d/klipper.git
-          cd klipper
-          make menuconfig  # (опционально, если нужен sim mode)
-          make
-          pip install -r scripts/klippy-requirements.txt
 
-      - name: Run config syntax check
+      - name: Clone Klipper
         run: |
-          cd klipper
-          python3 klippy/klippy.py ../printer.cfg -i /tmp
+          git clone https://github.com/Klipper3d/klipper.git
+
+      - name: Install Klipper Python dependencies
+        run: |
+          pip install -r klipper/scripts/klippy-requirements.txt
+
+      - name: Run Klipper config check
+        run: |
+          python3 klipper/klippy/klippy.py printer.cfg -i /tmp
