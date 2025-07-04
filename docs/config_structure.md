@@ -3,7 +3,6 @@
 🛑- устаревшее
 📁- каталог
 ```plaintext
-📁config/
 📁boards/
 │      ├──EBB42.cfg
 │      ├──EBB42 2EX.cfg
