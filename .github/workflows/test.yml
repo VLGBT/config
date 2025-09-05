@@ -1,5 +1,5 @@
 # Название workflow, описывает его цель
-name: Generate Changelo  
+name: Generate Changelog
 
 
 # Указывает событие, при котором будет запускаться workflow
